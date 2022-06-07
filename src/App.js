@@ -3,13 +3,15 @@ import './App.css';
 import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 import Home from './components/Home/Home';
 import AnotherPage from './components/AnotherPage/AnotherPage'
+import IndexRoute from './components/IndexRoute/IndexRoute'
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path = "/" element = {<Home></Home>}>
-        <Route path = "AnotherPage" element = {<AnotherPage></AnotherPage>}></Route>
+          <Route index element = {<IndexRoute/>}/>
+          <Route path = "AnotherPage" element = {<AnotherPage></AnotherPage>}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
