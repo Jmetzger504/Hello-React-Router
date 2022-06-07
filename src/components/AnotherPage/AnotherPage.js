@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const AnotherPage = () => (
   <div>
     <h1>You did it!</h1>
-    <Link to = "/Home">Let's go back to Home.</Link>
+    <Link to = "/"><p>You can go back with this link.</p></Link>
   </div>
 );
 
