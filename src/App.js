@@ -4,6 +4,7 @@ import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 import Home from './components/Home/Home';
 import AnotherPage from './components/AnotherPage/AnotherPage'
 import IndexRoute from './components/IndexRoute/IndexRoute'
+import ParamPage from './components/ParamPage/ParamPage'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route index element = {<IndexRoute/>}/>
           <Route path = "AnotherPage" element = {<AnotherPage></AnotherPage>}></Route>
         </Route>
+        <Route path = "/ParamPage/:name" element = {<ParamPage/>}/>
       </Routes>
     </BrowserRouter>
   );
